@@ -10,7 +10,7 @@ function generate(actor) {
   actor = actor || actors.pick();
   actor = actor.titleize();
   var displayText = 'The next Doctor Who will be played by <a href="http://en.wikipedia.org/wiki/' + actor + '">' + actor.replace(/\s\(.*\)/,'') + '</a>!';
-  var generatedText = 'The next Doctor Who will be played by ' + actor + '!';
+  var generatedText = 'The next Doctor Who will be played by ' + actor + '! #doctorwhaaa';
   $('#content').html(displayText);
   var shareUrl = window.location.href.split('?')[0]+'?word='+sharing.encodeStr(actor)+'$a';
   $('#share').attr('href', shareUrl);
